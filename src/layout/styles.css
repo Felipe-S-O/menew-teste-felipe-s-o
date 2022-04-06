@@ -1,0 +1,55 @@
+@import url('https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cerulean/bootstrap.min.css');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+html,
+body,
+#root {
+	height: 100%;
+}
+
+/** Layout **/
+
+.l-header {
+	grid-area: lheader;
+}
+
+.l-content {
+	grid-area: lcontent;
+}
+
+.l-footer {
+	grid-area: lfooter;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #38A8E8;
+	font-weight: bold;
+}
+
+#root {
+	display: grid;
+
+	grid-template-columns: 1fr;
+	grid-template-rows: 55px 1fr 55px;
+	grid-template-areas: 'lheader' 'lcontent' 'lfooter';
+}
+
+.login-form-btn2 {
+	font-size: 15px;
+	border: none;
+	border-radius: 10px;
+	color: #fff;
+	line-height: 1.2;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	background: #ab0ff3;
+	background: -webkit-linear-gradient(to left, #F6A522, #CB2D30);
+	background: -o-linear-gradient(to left, #F6A522,  #CB2D30);
+	background: -moz-linear-gradient(to left, #F6A522,  #CB2D30);
+	background: linear-gradient(to left, #F6A522,  #CB2D30);
+  }
